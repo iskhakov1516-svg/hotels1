@@ -1,0 +1,714 @@
+/* Базовые стили и сброс */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #ffffff;
+  background-image: url('img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Шапка */
+.navbar {
+  background: 
+    linear-gradient(
+      135deg,
+      rgba(212, 175, 55, 0.7),
+      rgba(139, 69, 19, 0.6)
+    ),
+    rgba(255, 255, 255, 0.1); /* Лёгкий белый слой */
+  backdrop-filter: blur(5px); /* Размытие фона */
+  border-bottom: 3px solid #312e2e;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,
+    #d4af37,
+    #ffd700,
+    #b8860b,
+    #daa520
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 4s linear infinite;
+  margin-bottom: 0.5rem;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.nav-link {
+  color: rgb(250, 234, 11) !important;
+  font-weight: 500;
+  background: linear-gradient(
+    90deg,
+    #d4af37,
+    #ffd700,
+    #b8860b,
+    #daa520
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 4s linear infinite;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ffd700 !important;
+}
+
+/* Герой-секция */
+.hero-section {
+  background: url('img/dubai-night.jpg') center/cover no-repeat;
+  color: rgb(245, 201, 5);
+  text-align: center;
+  padding: 8rem 0 4rem;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(
+    90deg,
+    #d4af37,
+    #ffd700,
+    #b8860b,
+    #daa520
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 4s linear infinite;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes shimmerEffect {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 0.8; }
+}
+
+.btn-danger {
+  background-color: #d4af37;
+  border-color: #d4af37;
+  font-size: 1.1rem;
+  padding: 12px 30px;
+  transition: all 0.3s;
+}
+
+.btn-danger:hover {
+  background-color: #b8962e;
+  border-color: #b8962e;
+  transform: translateY(-2px);
+}
+
+/* Секция районов */
+.destinations h2,
+.about h2,
+.featured-hotels h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #8b4513;
+}
+
+.item {
+  background: rgba(255, 255, 255, 0.7); /* матовый прозрачный фон */
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 2rem;
+
+  /* Центрирование через Flexbox */
+  display: flex;
+  justify-content: center; /* горизонтальное центрирование */
+  align-items: center;     /* вертикальное центрирование */
+  text-align: center;      /* на случай, если содержимое не в flex‑контейнере */
+}
+
+
+.item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.item h3 {
+  padding: 1rem 1rem 0.5rem;
+  color: #8b4513;
+}
+
+.item p {
+  padding: 0 1rem 1rem;
+  color: #666;
+}
+
+.btn-outline-danger {
+  color: #d4af37;
+  border-color: #d4af37;
+  margin: 0 1rem 1rem;
+}
+
+.btn-outline-danger:hover {
+  background-color: #d4af37;
+  color: rgb(255, 255, 255);
+}
+
+/* Карта */
+.map-container {
+  margin: 3rem 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Форма поиска */
+.gold-text {
+  position: relative;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2rem;
+  color: transparent;
+  background-image: linear-gradient(
+    90deg,
+    #f9c564 0%,
+    #ffd700 25%,
+    #f9c564 50%,
+    #ffd700 75%,
+    #f9c564 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shine 8s linear infinite;
+  text-align: center; /* Выравнивание текста по центру */
+  width: 100%; /* Занимает всю ширину родителя для корректного центрирования */
+}
+@keyframes shine {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.transparent-card {
+  background-color: rgba(255, 255, 255, 0.37); /* Полупрозрачный белый фон */
+  backdrop-filter: blur(10px); /* Размытие фона за элементом */
+  -webkit-backdrop-filter: blur(10px); /* Поддержка Safari */
+  border: 1px solid rgba(255, 255, 255, 0.562); /* Тонкая светлая рамка */
+  border-radius: 15px; /* Скруглённые углы */
+}
+
+.form-label {
+  font-weight: 600;
+  color: #ffc400;
+}
+
+/* О нас */
+.about .item {
+  text-align: center;
+  padding: 2rem;
+}
+
+.about h4 {
+  color: #8b4513;
+  margin-bottom: 1rem;
+}
+
+.about i {
+  color: #d4af37;
+  margin-right: 0.5rem;
+}
+
+/* Рекомендуемые отели */
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  color: #8b4513;
+}
+
+.card-text {
+  color: #666;
+}
+
+.badge {
+  font-size: 0.9rem;
+}
+
+/* Футер */
+.footer {
+  color: rgb(255, 255, 255);
+}
+
+.footer h5,
+.footer h6 {
+  color: #ffd700;
+}
+
+.footer a:hover {
+  color: #ffd700;
+}
+
+hr.text-muted {
+  border-color: rgba(255, 215, 0, 0.3);
+}
+
+/* Анимации */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-item {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .row > div {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Уменьшаем размер шрифта в навигационной панели */
+  .navbar-brand {
+    font-size: 2.5rem;
+  }
+
+  .nav-link {
+    font-size: 1.2rem; /* Исправлено: был избыточный размер 3.5rem */
+  }
+
+  /* Корректировка отступов в секции поиска */
+  .search-form {
+    padding: 2rem 0;
+  }
+
+  /* Адаптация карточек отелей */
+  .card-img-top {
+    height: 150px; /* Уменьшаем высоту изображения на мобильных */
+  }
+
+  /* Компактнее расположение кнопок */
+  .btn-outline-danger {
+    margin: 0.5rem 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  /* Упрощаем стили футера */
+  .footer h5,
+  .footer h6 {
+    font-size: 1.1rem;
+  }
+
+  .footer a {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Дополнительные настройки для очень маленьких экранов */
+  .hero-section {
+    padding: 5rem 0 3rem; /* Уменьшаем отступы */
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem; /* Ещё меньше шрифт заголовка */
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+    max-width: 90%; /* Более узкая ширина текста */
+  }
+
+  /* Компактная навигация */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-link {
+    margin: 0.5rem 0; /* Вертикальное расположение ссылок */
+  }
+}
+.travel-preparing {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  position: relative;
+}
+
+
+
+/* Контейнер временной шкалы */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Линия временной шкалы */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(to bottom, #d4af37, #a88b2b);
+  border-radius: 2px;
+}
+
+/* Карточки шагов */
+.item {
+  background-color: rgba(255, 255, 255, 0.37); /* Полупрозрачный белый фон */
+  backdrop-filter: blur(10px); /* Размытие фона за элементом */
+  -webkit-backdrop-filter: blur(10px); /* Поддержка Safari */
+  border: 1px solid rgba(255, 255, 255, 0.562); /* Тонкая светлая рамка */
+  border-radius: 15px; /* Скруглённые углы */
+  position: relative;
+  padding-left: 60px; /* Отступ для номера шага */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Поддержка Safari */
+}
+
+/* Эффект при наведении */
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Номер шага */
+.step-number {
+  position: absolute;
+  left: 18px;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+  background: #d4af37;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  z-index: 2;
+  box-shadow: 0 3px 8px rgba(212, 175, 55, 0.3);
+}
+
+/* Заголовки шагов */
+.item h4 {
+  color: #2c3e50;
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* Текст шагов */
+.item p {
+  color: #ffffff;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  padding-right: 20px;
+}
+
+/* Финальный шаг — особый стиль */
+.final-step {
+  background: linear-gradient(135deg, #d4af37 0%, #a88b2b 100%);
+  color: white;
+}
+
+.final-step h4 {
+  color: white;
+}
+
+.final-step p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Кнопка в финальном шаге */
+.final-step .btn {
+  background: white;
+  color: #d4af37;
+  border: none;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.final-step .btn:hover {
+  background: #f8f9fa;
+  transform: scale(1.05);
+}
+
+/* Анимация появления элементов */
+.animate-item {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.animate-item.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 20px;
+  }
+  
+  .item {
+    padding-left: 50px;
+  }
+  
+  .step-number {
+    left: 8px;
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+  
+  .gold-text {
+    text-align: left;
+  }
+
+ .bg-light {
+  background-color: #f8f9fa;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+  transition: transform 0.5s ease;
+}
+
+.card:hover .card-img {
+  transform: scale(1.05);
+}
+
+.ratio {
+  position: relative;
+}
+
+.ratio::before {
+  display: block;
+  padding-top: var(--bs-aspect-ratio);
+  content: "";
+}
+
+.ratio > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.shadow-sm {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.rounded-4 {
+  border-radius: 1rem;
+}
+
+.text-primary {
+  color: #0d6efd;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 576px) {
+  .card {
+    margin-bottom: 1.5rem;
+  }
+  .ratio-16x9::before {
+    padding-top: 100%; /* Квадратное изображение на мобильных */
+  }
+  }
+  }
+  /* Полностью прозрачный фон секции */
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+/* Матовые прозрачные карточки */
+.card-matte {
+  background: rgba(255, 255, 255, 0.85); /* Белый с 85% непрозрачности */
+  backdrop-filter: blur(10px); /* Эффект матового стекла */
+  -webkit-backdrop-filter: blur(10px); /* Поддержка Safari */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Тонкая светлая рамка */
+  transition: all 0.3s ease;
+}
+
+/* Эффект при наведении — чуть более непрозрачный и с увеличенным размытием */
+.card-matte:hover {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Сохранение чёткости текста внутри карточек */
+.card-matte .card-body,
+.card-matte .card-title,
+.card-matte .card-text {
+  color: #aaaaaa; /* Тёмный цвет текста для хорошей читаемости */
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-img {
+  transition: transform 0.5s ease;
+}
+
+.card:hover .card-img {
+  transform: scale(1.05);
+}
+
+.ratio {
+  position: relative;
+}
+
+.ratio::before {
+  display: block;
+  padding-top: var(--bs-aspect-ratio);
+  content: "";
+}
+
+.ratio > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.shadow-sm {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.rounded-4 {
+  border-radius: 1rem;
+}
+
+.text-primary {
+  color: #0d6efd;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 576px) {
+  .card {
+    margin-bottom: 1.5rem;
+  }
+  .ratio-16x9::before {
+    padding-top: 100%; /* Квадратное изображение на мобильных */
+  }
+}
+/* Основные стили для секции контактов */
+
+.page-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.page-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Стили для формы */
+.contacts .item {
+  background: rgb(255, 255, 255);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+

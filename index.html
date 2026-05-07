@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dubai-Hotels | Роскошные отели Дубая</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+  <!-- Шапка -->
+  <header class="navbar navbar-expand-lg sticky-top shadow-sm z-3 py-3">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Dubai-Hotels</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="hotels.html">Отели</a></li>
+            <li class="nav-item"><a class="nav-link" href="information.html">Информация</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Обратная связь</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Главный баннер -->
+  <section class="hero-section">
+    <div class="container">
+      <h1 class="display-4 fw-bold mb-3">Роскошь Дубая ждёт вас</h1>
+      <p class="lead mb-4">Откройте для себя лучшие отели города с видом на Персидский залив</p>
+      <a href="#search-form" class="btn btn-primary btn-lg px-4 rounded-pill">Найти отель</a>
+    </div>
+  </section>
+
+  <!-- Форма поиска -->
+  <section id="search-form" class="py-5 bg-transparent">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="card shadow-sm transparent-card">
+            <div class="card-body p-4">
+              <h2 class="h4 mb-4 text-center" style="color: #ffc400;">Найдите идеальный отель</h2>
+              <form class="row g-3">
+                <div class="col-md-4">
+                  <label class="form-label">Район</label>
+                  <select class="form-select">
+                    <option>Любой район</option>
+            <option>Бурдж-Халифа</option>
+            <option>Пальма Джумейра</option>
+            <option>Дубай Марина</option>
+            <option>Дейра</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Заезд</label>
+          <input type="date" class="form-control">
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Выезд</label>
+          <input type="date" class="form-control">
+        </div>
+        <div class="col-md-2">
+          <button type="submit" class="btn btn-primary w-100 mt-4">Найти</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- Рекомендуемые отели -->
+<section id="hotels" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 gold-text">Рекомендуемые отели</h2>
+    <div class="row g-4">
+      <!-- Отель 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <img src="img/burj-al-arab.jpg" class="card-img-top" alt="Бурдж‑эль‑Араб" height="200" style="object-fit: cover;">
+          <div class="card-body">
+            <h3 class="card-title h5">Бурдж‑эль‑Араб</h3>
+            <p class="card-text text-muted">Легендарный отель в форме паруса</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="badge bg-warning text-dark">5 звёзд</span>
+              <strong>от 50 000 руб./ночь</strong>
+            </div>
+            <a href="#" class="btn btn-outline-primary mt-3 w-100">Подробнее</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Отель 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <img src="img/atlantis-the-palm.jpg" class="card-img-top" alt="Атлантис, Пальма" height="200" style="object-fit: cover;">
+          <div class="card-body">
+            <h3 class="card-title h5">Атлантис, Пальма</h3>
+            <p class="card-text text-muted">Роскошный комплекс с аквапарком</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="badge bg-warning text-dark">5 звёзд</span>
+              <strong>от 35 000 руб./ночь</strong>
+            </div>
+            <a href="#" class="btn btn-outline-primary mt-3 w-100">Подробнее</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Отель 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <img src="img/jumeirah-beach.jpg" class="card-img-top" alt="Джумейра Бич Отель" height="200" style="object-fit: cover;">
+          <div class="card-body">
+            <h3 class="card-title h5">Джумейра Бич Отель</h3>
+                        <p class="card-text text-muted">Отель в форме волны с выходом на пляж</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="badge bg-warning text-dark">5 звёзд</span>
+              <strong>от 28 000 руб./ночь</strong>
+            </div>
+            <a href="#" class="btn btn-outline-primary mt-3 w-100">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Популярные районы -->
+<section id="destinations" class="py-5">
+  <div class="container">
+   <h2 class="text-center mb-5 gold-text">Популярные районы Дубая</h2>
+    <div class="row g-4">
+      <!-- Район 1 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card text-center h-100">
+          <img src="img/burj-khalifa-r.jpg" class="card-img-top" alt="Бурдж-Халифа" height="180" style="object-fit: cover;">
+          <div class="card-body">
+            <h3 class="card-title h5">Бурдж‑Халифа</h3>
+            <p class="card-text">Сердце города: рядом небоскрёб, Дубай Молл и поющие фонтаны</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Район 2 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card text-center h-100">
+          <img src="img/palm-jumeirah-r.jpg" class="card-img-top" alt="Пальма Джумейра" height="180" style="object-fit: cover;">
+          <div class="card-body">
+            <h3 class="card-title h5">Пальма Джумейра</h3>
+            <p class="card-text">Знаменитый искусственный остров с роскошными отелями и пляжами</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Район 3 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card text-center h-100">
+          <img src="img/dubai-marina-r.jpg" class="card-img-top" alt="Дубай Марина" height="180" style="object-fit: cover;">
+          <div class="card-body">
+            <h3 class="card-title h5">Дубай Марина</h3>
+            <p class="card-text">Яхтенная гавань, небоскрёбы и набережная с ресторанами</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Район 4 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card text-center h-100">
+          <img src="img/deira-r.jpg" class="card-img-top" alt="Дейра" height="180" style="object-fit: cover;">
+          <div class="card-body">
+            <h3 class="card-title h5">Дейра</h3>
+            <p class="card-text">Традиционные рынки, доступная цена проживания и близость к аэропорту</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- О нас -->
+<section id="about" class="py-5 bg-transparent">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="card shadow-sm transparent-card">
+          <div class="card-body p-4 p-lg-5">
+            <div class="row align-items-center">
+              <!-- Текст слева -->
+              <div class="col-lg-6 mb-4 mb-lg-0">
+                <h2 class="mb-3">О Dubai‑Hotels</h2>
+                <p class="lead mb-4">
+                  Мы помогаем подобрать и забронировать отели в Дубае, учитывая ваши пожелания и бюджет.
+                </p>
+                <ul class="list-unstyled mt-4">
+                  <li class="mb-3 d-flex align-items-start">
+                    <i class="fas fa-check text-primary me-2 mt-1"></i>
+                    <span>Поддержка 24/7</span>
+                  </li>
+                  <li class="mb-3 d-flex align-items-start">
+                    <i class="fas fa-check text-primary me-2 mt-1"></i>
+                    <span>Цены на 10–15 % ниже, чем у конкурентов</span>
+                  </li>
+                  <li class="mb-3 d-flex align-items-start">
+                    <i class="fas fa-check text-primary me-2 mt-1"></i>
+                    <span>Специальные акции для постоянных клиентов</span>
+                  </li>
+                </ul>
+                <a href="#contact" class="btn btn-primary mt-4 px-4">Связаться с нами</a>
+              </div>
+
+              <!-- Изображение справа -->
+              <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end">
+                <img src="img/dubai-city.jpg" alt="Панорама Дубая" class="img-fluid rounded shadow-sm" style="max-width: 100%; height: auto;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Контакты -->
+<section id="contact" class="py-5">
+ <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="card shadow-sm transparent-card">
+          <div class="card-body p-4 p-lg-5">
+            <div class="row align-items-center">
+        <h2 class="mb-4">Готовы помочь вам!</h2>
+        <p class="lead mb-4">Свяжитесь с нами любым удобным способом</p>
+        <div class="row g-4 mb-4">
+          <div class="col-md-4">
+            <i class="fas fa-map-marker-alt fa-2x text-primary mb-3"></i>
+            <h5>Адрес</h5>
+            <p>Дубай, ОАЭ</p>
+          </div>
+          <div class="col-md-4">
+            <i class="fas fa-phone fa-2x text-primary mb-3"></i>
+            <h5>Телефон</h5>
+            <p><a href="tel:+97141234567">+971 4 123 4567</a></p>
+          </div>
+          <div class="col-md-4">
+            <i class="fas fa-envelope fa-2x text-primary mb-3"></i>
+            <h5>Email</h5>
+            <p><a href="mailto:info@dubai-hotels.com">info@dubai-hotels.com</a></p>
+          </div>
+        </div>
+        <form class="row g-3">
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Ваше имя">
+          </div>
+          <div class="col-md-6">
+            <input type="email" class="form-control" placeholder="Ваш email">
+          </div>
+          <div class="col-12">
+            <textarea class="form-control" rows="4" placeholder="Ваше сообщение"></textarea>
+          </div>
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-primary px-4">Отправить сообщение</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Подвал -->
+<footer id="footer" class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <h5 class="fw-bold">Dubai‑Hotels</h5>
+        <p>Лучший выбор отелей в Дубае с гарантией лучшей цены и поддержкой 24/7</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item"><a href="#" class="text-white">Главная</a></li>
+          <li class="list-inline-item"><a href="#hotels" class="text-white">Отели</a></li>
+          <li class="list-inline-item"><a href="#about" class="text-white">О нас</a></li>
+          <li class="list-inline-item"><a href="#contact" class="text-white">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="text-muted my-4">
+    <div class="text-center">
+      <p class="mb-0">© 2025 Dubai‑Hotels | Все права защищены</p>
+    </div>
+  </div>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Плавная прокрутка для якорей
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+
+  // Анимация появления элементов при скролле
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate__fadeInUp');
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('.card, .col-lg-3').forEach(el => {
+    observer.observe(el);
+  });
+</script>
+</body>
+</html>

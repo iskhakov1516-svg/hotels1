@@ -1,0 +1,248 @@
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+    <title>Отели Дубая | Dubai-Hotels</title>
+  </head>
+  <body>
+    <!-- Шапка -->
+  <header class="navbar navbar-expand-lg sticky-top shadow-sm z-3 py-3">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Dubai-Hotels</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="hotels.html">Отели</a></li>
+            <li class="nav-item"><a class="nav-link" href="information.html">Информация</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Обратная связь</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    
+<main class="mb-5">
+  <section class="page-header">
+    <div class="transparent-box">
+      <h1 class="gold-text">Отели в Дубае</h1>
+      <p class="gold-text">Выберите лучший вариант проживания в Дубае по выгодной цене</p>
+    </div>
+  </section>
+</main>
+
+      <section class="search-filters mt-4">
+        <div class="container">
+          <form class="row g-3">
+            <div class="col-md-3">
+              <label for="district" class="form-label">Район</label>
+              <select id="district" name="district" class="form-select">
+                <option value="">Любой район</option>
+                <option value="burj">Бурдж-Халифа</option>
+                <option value="palm">Пальма Джумейра</option>
+                <option value="marina">Дубай Марина</option>
+                <option value="deira">Дейра</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label for="checkin" class="form-label">Заезд</label>
+              <input type="date" id="checkin" name="checkin" class="form-control">
+            </div>
+            <div class="col-md-3">
+              <label for="checkout" class="form-label">Выезд</label>
+              <input type="date" id="checkout" name="checkout" class="form-control">
+            </div>
+            <div class="col-md-3">
+              <label for="guests" class="form-label">Гости</label>
+              <select id="guests" name="guests" class="form-select">
+                <option value="1">1 гость</option>
+                <option value="2" selected>2 гостя</option>
+                <option value="3">3 гостя</option>
+                <option value="4">4 гостя</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-danger w-100">Найти отели</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="hotel-list mt-5">
+  <div class="container">
+    <div class="row">
+      <!-- Отель 1 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 animate-item">
+        <article class="card h-100">
+          <img src="img/burj-al-arab.jpg" class="card-img-top" alt="Бурдж‑эль‑Араб — легендарный отель в форме паруса">
+          <div class="card-body">
+            <h3 class="card-title">Бурдж‑эль‑Араб</h3>
+            <p class="card-text">Легендарный отель в форме паруса, один из самых роскошных в мире</p>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-warning text-dark">5 звёзд</span>
+              <strong>от 50 000 руб./ночь</strong>
+            </div>
+            <div class="mb-3">
+              <i class="fas fa-map-marker-alt me-2" aria-hidden="true"></i>
+              <small>Район Бурдж-Халифа</small>
+            </div>
+            <a href="hotel-details.html?id=burj-al-arab" class="btn btn-danger w-100" aria-label="Подробнее о Бурдж‑эль‑Арабе и забронировать">Подробнее и забронировать</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Отель 2 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 animate-item">
+        <article class="card h-100">
+          <img src="img/atlantis-the-palm.jpg" class="card-img-top" alt="Атлантис, Пальма — роскошный комплекс с аквапарком и дельфинарием">
+          <div class="card-body">
+            <h3 class="card-title">Атлантис, Пальма</h3>
+            <p class="card-text">Роскошный комплекс с аквапарком, дельфинарием и видом на залив</p>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-warning text-dark">5 звёзд</span>
+              <strong>от 35 000 руб./ночь</strong>
+            </div>
+            <div class="mb-3">
+              <i class="fas fa-map-marker-alt me-2" aria-hidden="true"></i>
+              <small>Пальма Джумейра</small>
+            </div>
+            <a href="hotel-details.html?id=atlantis" class="btn btn-danger w-100" aria-label="Подробнее об Атлантис, Пальме и забронировать">Подробнее и забронировать</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Отель 3 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 animate-item">
+        <article class="card h-100">
+          <img src="img/jumeirah-beach.jpg" class="card-img-top" alt="Джумейра Бич Отель — отель в форме волны с выходом на пляж">
+          <div class="card-body">
+            <h3 class="card-title">Джумейра Бич Отель</h3>
+            <p class="card-text">Отель в форме волны с прямым выходом на пляж и видом на Бурдж‑Халифа</p>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-warning text-dark">5 звёзд</span>
+              <strong>от 28 000 руб./ночь</strong>
+            </div>
+            <div class="mb-3">
+              <i class="fas fa-map-marker-alt me-2" aria-hidden="true"></i>
+              <small>Джумейра</small>
+            </div>
+            <a href="hotel-details.html?id=jumeirah" class="btn btn-danger w-100" aria-label="Подробнее о Джумейра Бич Отеле и забронировать">Подробнее и забронировать</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Отель 4 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 animate-item">
+        <article class="card h-100">
+          <img src="img/armani-hotel.jpg" class="card-img-top" alt="Armani Hotel Dubai — эксклюзивный отель в Бурдж-Халифе">
+          <div class="card-body">
+            <h3 class="card-title">Armani Hotel Dubai</h3>
+            <p class="card-text">Эксклюзивный отель в небоскрёбе Бурдж-Халифа с фирменным стилем Джорджо Армани</p>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-warning text-dark">5 звёзд</span>
+              <strong>от 45 000 руб./ночь</strong>
+            </div>
+            <div class="mb-3">
+              <i class="fas fa-map-marker-alt me-2" aria-hidden="true"></i>
+              <small>Район Бурдж-Халифа</small>
+            </div>
+            <a href="hotel-details.html?id=armani" class="btn btn-danger w-100" aria-label="Подробнее об Armani Hotel Dubai и забронировать">Подробнее и забронировать</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Отель 5 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 animate-item">
+        <article class="card h-100">
+          <img src="img/madinat-jumeirah.jpg" class="card-img-top" alt="Madinat Jumeirah — курортный комплекс в стиле арабского города">
+          <div class="card-body">
+            <h3 class="card-title">Madinat Jumeirah</h3>
+            <p class="card-text">Курортный комплекс в стиле арабского города с каналами, виллами и традиционными рынками</p>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-warning text-dark">5 звёзд</span>
+              <strong>от 38 000 руб./ночь</strong>
+            </div>
+            <div class="mb-3">
+              <i class="fas fa-map-marker-alt me-2" aria-hidden="true"></i>
+              <small>Джумейра</small>
+            </div>
+            <a href="hotel-details.html?id=madinat" class="btn btn-danger w-100" aria-label="Подробнее о Madinat Jumeirah и забронировать">Подробнее и забронировать</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Отель 6 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 animate-item">
+        <article class="card h-100">
+          <img src="img/ritz-carlton.jpg" class="card-img-top" alt="The Ritz‑Carlton — элегантный отель с частным пляжем">
+          <div class="card-body">
+            <h3 class="card-title">The Ritz‑Carlton</h3>
+            <p class="card-text">Элегантный отель с частным пляжем, спа‑центром и панорамными видами на залив</p>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-warning text-dark">5 звёзд</span>
+              <strong>от 42 000 руб./ночь</strong>
+            </div>
+            <div class="mb-3">
+              <i class="fas fa-map-marker-alt me-2" aria-hidden="true"></i>
+              <small>Дубай Марина</small>
+            </div>
+            <a href="hotel-details.html?id=ritz" class="btn btn-danger w-100" aria-label="Подробнее о The Ritz‑Carlton и забронировать">Подробнее и забронировать</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Пагинация -->
+<nav aria-label="Навигация по страницам отелей" class="mt-5">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Назад</a>
+    </li>
+    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Вперед</a>
+    </li>
+  </ul>
+</nav>
+</div>
+</section>
+</main>
+
+<footer id="footer" class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <h5 class="fw-bold">Dubai‑Hotels</h5>
+        <p>Лучший выбор отелей в Дубае с гарантией лучшей цены и поддержкой 24/7</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item"><a href="#" class="text-white">Главная</a></li>
+          <li class="list-inline-item"><a href="#hotels" class="text-white">Отели</a></li>
+          <li class="list-inline-item"><a href="#about" class="text-white">О нас</a></li>
+          <li class="list-inline-item"><a href="#contact" class="text-white">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="text-muted my-4">
+    <div class="text-center">
+      <p class="mb-0">© 2025 Dubai‑Hotels | Все права защищены</p>
+    </div>
+  </div>
+</div>
+</footer>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

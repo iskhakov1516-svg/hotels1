@@ -1,0 +1,151 @@
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Обратная связь | Dubai-Hotels</title>
+  </head>
+  <body>
+    <header class="navbar navbar-expand-lg sticky-top shadow-sm z-3 py-3">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Dubai-Hotels</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+             <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="hotels.html">Отели</a></li>
+            <li class="nav-item"><a class="nav-link" href="information.html">Информация</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Обратная связь</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+<section class="hero-section">
+    <div class="container">
+      <h1 class="display-4 fw-bold mb-3">Свяжитесь с нами</h1>
+      <p class="lead mb-4">Мы поможем забронировать отель в Дубае и ответим на все вопросы</p>
+    </div>
+  </section>
+
+  <section class="contacts page mt-4">
+    <p class="lead fs-4 gold-text mx-4">Заполните форму ниже, и мы подберём для вас лучший вариант проживания в Дубае</p>
+    <div class="container">
+      <div class="row justify-content-center">
+        <!-- Форма -->
+        <div class="col-12 col-md-7 col-lg-6 h-100 animate-item top">
+          <div class="item">
+            <form action="#" method="post" class="row g-3">
+              <div class="col-12 col-lg-6">
+                <input type="text" id="surname" class="form-control" required>
+                <label for="surname" class="form-label">Фамилия</label>
+              </div>
+              <div class="col-12 col-lg-6">
+                <input type="text" id="name" class="form-control" required>
+                <label for="name" class="form-label">Имя</label>
+              </div>
+              <div class="col-12 col-lg-6">
+                <input type="email" id="email" class="form-control" required>
+                <label for="email" class="form-label">E‑mail</label>
+              </div>
+              <div class="col-12 col-lg-6">
+                <input type="tel" id="phone" class="form-control" required>
+                <label for="phone" class="form-label">Телефон</label>
+              </div>
+              <div class="col-12">
+                <input type="text" id="message-theme" class="form-control" required>
+                <label for="message-theme" class="form-label">Тема сообщения</label>
+              </div>
+              <div class="col-12">
+                <textarea class="form-control" id="message" rows="5" required></textarea>
+                <label for="message" class="form-label">Сообщение (укажите даты заезда/выезда, район, количество гостей и особые пожелания)</label>
+              </div>
+              <div class="col-12 d-flex flex-wrap my-3">
+                <div class="form-check">
+                  <input class="form-check-input border-danger-subtle" type="checkbox" value id="agreement" required>
+                  <label class="form-check-label" for="agreement">
+                    Я даю согласие на обработку персональных данных
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-danger w-auto px-5 rounded-5 fs-5">Отправить заявку</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Контактная информация и видео -->
+        <div class="col-12 col-md-5 col-lg-4 animate-item top">
+          <div class="item contact-info m-1">
+            <div class="contact-content">
+              <h3 class="mb-4">Контактная информация</h3>
+              <div class="mb-3">
+                <h5><i class="fa fa-map-marker-alt me-2"></i>Адрес</h5>
+                <p style="color: #000000;">ОАЭ, г. Дубай, ул. Отельная, 15</p>
+              </div>
+              <div class="mb-3">
+                <h5><i class="fa fa-phone me-2"></i>Телефон</h5>
+                <p style="color: #000000;">+971 4 123 4567</p>
+              </div>
+              <div class="mb-3">
+                <h5><i class="fa fa-phone me-2"></i>E‑mail</h5>
+                <p style="color: #000000;">info@dubai-hotels.com</p>
+              </div>
+              <div class="mb-2">
+                <h5><i class="fa fa-clock me-2"></i>Часы работы</h5>
+                <p style="color: #000000;">Ежедневно: 8:00–22:00</p>
+              </div>
+              <div class="mb-3">
+                <h5>Социальные сети</h5>
+                <div class="social-icons mt-3">
+                  <a href="#"><i class="fab fa-x"></i></a>
+                  <a href="#"><i class="fab fa-telegram"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal page" id="thank">
+    <div class="modal-window">
+      <h3 class="mb-3">Спасибо за заявку!</h3>
+      <p class="mb-4 fs-5">Наш менеджер свяжется с вами в течение 1–2 часов для подтверждения бронирования</p>
+      <button id="close" class="btn btn-danger w-auto px-3 rounded-5 fs-5">Закрыть</button>
+    </div>
+  </div>
+</main>
+
+<footer id="footer" class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <h5 class="fw-bold">Dubai‑Hotels</h5>
+        <p>Лучший выбор отелей в Дубае с гарантией лучшей цены и поддержкой 24/7</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item"><a href="#" class="text-white">Главная</a></li>
+          <li class="list-inline-item"><a href="#hotels" class="text-white">Отели</a></li>
+          <li class="list-inline-item"><a href="#about" class="text-white">О нас</a></li>
+          <li class="list-inline-item"><a href="#contact" class="text-white">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="text-muted my-4">
+    <div class="text-center">
+      <p class="mb-0">© 2025 Dubai‑Hotels | Все права защищены</p>
+    </div>
+  </div>
+</div>
+</footer>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
